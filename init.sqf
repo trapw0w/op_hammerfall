@@ -35,6 +35,7 @@ speakers = [speaker1, speaker2, speaker3, speaker4, speaker5, speaker6];
 // Create action and add to TOC Phone
 _action = ["ScramblePJ","Scramble Pararescue","",{{playSound3D [MISSION_ROOT + "audio\leeroy-jenkins.ogg", _x];} forEach speakers;},{true}] call ace_interact_menu_fnc_createAction;
 [tocphone, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+[tocphone_1, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 
 
 // Setup ALiVE Auto Save every 4 hours 
