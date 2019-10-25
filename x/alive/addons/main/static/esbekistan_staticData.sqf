@@ -1,7 +1,7 @@
 private["_worldName"];
  _worldName = tolower(worldName);
  ["ALiVE SETTING UP MAP: esbekistan"] call ALIVE_fnc_dump;
- ALIVE_Indexing_Blacklist = [];
+ ALIVE_Indexing_Blacklist = ["Land_bigwall1_arch"];
  ALIVE_airBuildingTypes = [];
  ALIVE_militaryParkingBuildingTypes = [];
  ALIVE_militarySupplyBuildingTypes = [];
