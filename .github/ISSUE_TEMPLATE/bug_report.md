@@ -23,5 +23,8 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
+**RPT Log**
+Please attach your latest RPT file.
+
 **Additional context**
 Add any other context about the problem here.
