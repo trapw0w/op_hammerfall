@@ -37,6 +37,8 @@ _action = ["ScramblePJ","Scramble Pararescue","",{{playSound3D [MISSION_ROOT + "
 [tocphone, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 [tocphone_1, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 
+// Add ACE Actions for Insignia
+[] execVM "scripts/add_insignia.sqf";
 
 // Setup ALiVE Auto Save every 4 hours 
 14400 call ALiVE_fnc_AutoSave_PNS;
