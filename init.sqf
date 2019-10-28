@@ -44,3 +44,9 @@ _action = ["ScramblePJ","Scramble Pararescue","",{{playSound3D [MISSION_ROOT + "
 14400 call ALiVE_fnc_AutoSave_PNS;
 [west, "HQ"] sideChat "ALiVE Auto Save Complete..";
 
+if (!hasInterface && !isDedicated) then {
+headlessClients = [];
+headlessClients set [(count headlessClients), player];
+publicVariable "headlessClients";
+isHC = true;
+};
