@@ -9,56 +9,70 @@ _hqCrates = [hq_ammo_1];
 
 /*
  Object texture locations:
- 6 - Flag slot
- 7 - Flag slot other arm 
+ 6 - Flag slot - Right Arm
+ 7 - Flag slot - Left Arm 
  4 - Insignia
 */
 
 // Define PRAE Insignia
 _praeInsignia = ["2CDO_Insignia","Add 2CDO Insignia","",{ 
-	_player setObjectTexture [6,"\PRAE_Insignia\data\AUS\AUS5.paa"]; 
-	_player setObjectTexture [7,"\PRAE_Insignia\data\AUS\AUS_IR.paa"];
-	_player setObjectTexture [4,"\PRAE_Insignia\data\AUS\2cdo_rgt_ca.paa"];
+	_player setObjectTextureGlobal [6,"\PRAE_Insignia\data\AUS\AUS5.paa"]; 
+	_player setObjectTextureGlobal [7,"\PRAE_Insignia\data\AUS\AUS_IR.paa"];
+	_player setObjectTextureGlobal [4,"\PRAE_Insignia\data\AUS\2cdo_rgt_ca.paa"];
  },{true}] call ace_interact_menu_fnc_createAction;
 
 // Define Det-7 Insignia
 _det7Insignia = ["DET7_Insignia","Add 1st SFOD-D Insignia","",{
-	_player setObjectTexture [4,"\PRAE_Insignia\data\MISC\Sparta_Patch01_ca.paa"];
+	_player setObjectTextureGlobal [4,"\PRAE_Insignia\data\MISC\Sparta_Patch01_ca.paa"];
+	_player setObjectTextureGlobal [7,"\PRAE_Insignia\data\USA\US_Flag_mc_L_ca.paa"];
+	_player setObjectTextureGlobal [6,"\PRAE_Insignia\data\USA\US_Flag_ir_R_ca.paa"];
  },{true}] call ace_interact_menu_fnc_createAction;
 
 // Define MEU Insignia
 _marsocInsignia = ["MARSOC_Insignia","Add MARSOC Insignia","",{
-	_player setObjectTexture [6,"\PRAE_Insignia\data\USA\US_Flag_mc_L_ca.paa"];
-	_player setObjectTexture [4,"\PRAE_Insignia\data\USA\marine_raiders_grn_alt_ca.paa"];
+	_player setObjectTextureGlobal [7,"\PRAE_Insignia\data\USA\US_Flag_mc_L_ca.paa"];
+	_player setObjectTextureGlobal [6,"\PRAE_Insignia\data\USA\US_Flag_ir_R_ca.paa"];
+	_player setObjectTextureGlobal [4,"\PRAE_Insignia\data\USA\marine_raiders_grn_alt_ca.paa"];
  },{true}] call ace_interact_menu_fnc_createAction;
 
 _pjInsignia = ["PJ_Insignia","Add Pararescue Insignia","",{
-	_player setObjectTexture [6,"\PRAE_Insignia\data\USA\US_Flag_mc_L_ca.paa"];
-	_player setObjectTexture [4,"\PRAE_Insignia\data\USA\pararescue_ca.paa"];
+	_player setObjectTextureGlobal [7,"\PRAE_Insignia\data\USA\US_Flag_mc_L_ca.paa"];
+	_player setObjectTextureGlobal [6,"\PRAE_Insignia\data\USA\US_Flag_ir_R_ca.paa"];
+	_player setObjectTextureGlobal [4,"\PRAE_Insignia\data\USA\pararescue_ca.paa"];
  },{true}] call ace_interact_menu_fnc_createAction;
 
 // Define Ranger Insignia
 _rangerInsignia = ["RANGER_Insignia","Add Ranger Insignia","",{
-	_player setObjectTexture [4,"\PRAE_Insignia\data\USA\75ranger_1btn_ocp_ca.paa"];
+	_player setObjectTextureGlobal [4,"\PRAE_Insignia\data\USA\75ranger_1btn_ocp_ca.paa"];
+	_player setObjectTextureGlobal [7,"\PRAE_Insignia\data\USA\US_Flag_mc_L_ca.paa"];
+	_player setObjectTextureGlobal [6,"\PRAE_Insignia\data\USA\US_Flag_ir_R_ca.paa"];
  },{true}] call ace_interact_menu_fnc_createAction;
 
 // Define Falcon Insignia
 _falconInsignia = ["RANGERBTN2_Insignia","Add Ranger Insignia","",{
-	_player setObjectTexture [4,"\PRAE_Insignia\data\USA\75ranger_2btn_ocp_ca.paa"];
+	_player setObjectTextureGlobal [4,"\PRAE_Insignia\data\USA\75ranger_2btn_ocp_ca.paa"];
+	_player setObjectTextureGlobal [7,"\PRAE_Insignia\data\USA\US_Flag_mc_L_ca.paa"];
+	_player setObjectTextureGlobal [6,"\PRAE_Insignia\data\USA\US_Flag_ir_R_ca.paa"];
  },{true}] call ace_interact_menu_fnc_createAction;
 
 // Define Pilot Insignia 
 _pilotInsignia = ["PILOT_Insignia","Add 160th SOAR Insignia","",{
-	_player setObjectTexture [4,"\PRAE_Insignia\data\USA\160soar_ocp_ca.paa"];
+	_player setObjectTextureGlobal [4,"\PRAE_Insignia\data\USA\160soar_ocp_ca.paa"];
+	_player setObjectTextureGlobal [7,"\PRAE_Insignia\data\USA\US_Flag_mc_L_ca.paa"];
+	_player setObjectTextureGlobal [6,"\PRAE_Insignia\data\USA\US_Flag_ir_R_ca.paa"];
  },{true}] call ace_interact_menu_fnc_createAction;
 
 // Define HQ Insignia
 _hqInsignia = ["HQ_Insignia","Add JSOC Insignia","",{
-	_player setObjectTexture [4,"\PRAE_Insignia\data\USA\JSOC_Patch_ca.paa"];
+	_player setObjectTextureGlobal [4,"\PRAE_Insignia\data\USA\JSOC_Patch_ca.paa"];
+	_player setObjectTextureGlobal [7,"\PRAE_Insignia\data\USA\US_Flag_mc_L_ca.paa"];
+	_player setObjectTextureGlobal [6,"\PRAE_Insignia\data\USA\US_Flag_ir_R_ca.paa"];
  },{true}] call ace_interact_menu_fnc_createAction;
 
  _cctInsignia = ["CCT_Insignia","Add 23 STS Insignia","",{
-	_player setObjectTexture [4,"\PRAE_Insignia\data\USA\23sts_ca.paa"];
+	_player setObjectTextureGlobal [4,"\PRAE_Insignia\data\USA\23sts_ca.paa"];
+	_player setObjectTextureGlobal [7,"\PRAE_Insignia\data\USA\US_Flag_mc_L_ca.paa"];
+	_player setObjectTextureGlobal [6,"\PRAE_Insignia\data\USA\US_Flag_ir_R_ca.paa"];
  },{true}] call ace_interact_menu_fnc_createAction;
 
 // Apply PRAE Interactions
