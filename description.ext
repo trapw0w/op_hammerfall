@@ -1,0 +1,3 @@
+OnLoadName = "Operation Hammerfall";
+Author = "Ando & Praetorians - Spearhead Gaming";
+loadScreen = "images\intro.jpeg";
