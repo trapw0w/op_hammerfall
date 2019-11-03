@@ -40,7 +40,31 @@ _action = ["ScramblePJ","Scramble Pararescue","",{{playSound3D [MISSION_ROOT + "
 // Add ACE Actions for Insignia
 [] execVM "scripts\add_insignia.sqf";
 
+// Replace arches on map so CQB and Civs don't get placed in them 
+[] execVM "scripts\replace_archways.sqf";
+
 // Setup ALiVE Auto Save every 4 hours 
 14400 call ALiVE_fnc_AutoSave_PNS;
 [west, "HQ"] sideChat "ALiVE Auto Save Complete..";
 
+
+if (isServer) then {
+    ["ace_captiveStatusChanged", {
+        params ["_unit", "_state", "_reason"];
+ 
+        if ((getPos _unit) inArea CIVH) then {
+            _unit setVariable ["detained", true, true];
+        };
+    }] call CBA_fnc_addEventHandler;
+ 
+    [{
+        [getPos CIVH, [side player], -10] call ALIVE_fnc_updateSectorHostility;
+    }, 3600, []] call CBA_fnc_addPerFrameHandler;
+};
+
+if (!hasInterface && !isDedicated) then {
+headlessClients = [];
+headlessClients set [(count headlessClients), player];
+publicVariable "headlessClients";
+isHC = true;
+};
