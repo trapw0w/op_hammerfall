@@ -89,7 +89,7 @@ force ace_interaction_enableTeamManagement = true;
 ace_gestures_showOnInteractionMenu = 2;
 ace_interact_menu_actionOnKeyRelease = true;
 force ace_interact_menu_addBuildingActions = true;
-ace_interact_menu_alwaysUseCursorInteraction = true;
+ace_interact_menu_alwaysUseCursorInteraction = false;
 force ace_interact_menu_alwaysUseCursorSelfInteraction = true;
 ace_interact_menu_colorShadowMax = [0,0,0,1];
 ace_interact_menu_colorShadowMin = [0,0,0,0.25];
@@ -101,7 +101,7 @@ ace_interact_menu_menuBackground = 0;
 ace_interact_menu_selectorColor = [1,0,0];
 ace_interact_menu_shadowSetting = 2;
 ace_interact_menu_textSize = 2;
-ace_interact_menu_useListMenu = true;
+ace_interact_menu_useListMenu = false;
 
 // ACE Logistics
 force ace_cargo_enable = true;
@@ -170,7 +170,7 @@ force ace_medical_enableFor = 1;
 force ace_medical_enableOverdosing = true;
 force ace_medical_enableRevive = 0;
 force ace_medical_enableScreams = true;
-force ace_medical_enableUnconsciousnessAI = 1;
+force ace_medical_enableUnconsciousnessAI = 2;
 force ace_medical_enableVehicleCrashes = true;
 force ace_medical_healHitPointAfterAdvBandage = false;
 force ace_medical_increaseTrainingInLocations = true;
@@ -231,7 +231,7 @@ force ace_nightvision_disableNVGsWithSights = false;
 force ace_nightvision_effectScaling = 0.31746;
 force ace_nightvision_fogScaling = 0.329131;
 force ace_nightvision_noiseScaling = 0.282446;
-force ace_nightvision_shutterEffects = true;
+ace_nightvision_shutterEffects = false;
 
 // ACE Overheating
 force ace_overheating_displayTextOnJam = true;
@@ -453,6 +453,9 @@ force cba_disposable_replaceDisposableLauncher = true;
 cba_events_repetitionMode = 1;
 cba_optics_usePipOptics = true;
 
+// KNB
+force KNB_book_aceAction = true;
+
 // MRH_Milsim Tools - RHS CBPS
 force MRH_MT_RHSCBPS_globalComp = "MRH_defaultCBPS_medical_simple";
 force MRH_MT_RHSCBPS_useGlobal = false;
@@ -475,6 +478,8 @@ force MRH_MilsimTools_AllowDeadReco = true;
 force MRH_MilsimTools_Core_ApplyMedicPatch = false;
 force MRH_MilsimTools_Delete_disconnected_body = false;
 force MRH_MilsimTools_hideAceMyLoadOuts = false;
+force MRH_MilsimTools_LD_loadoutDisplaySize = 100;
+force MRH_MilsimTools_LD_ShowLoadOutInBrief = false;
 force MRH_MilsimTools_PlayIntro_ToPlayer = false;
 force MRH_MilsimTools_ResetHasDiedOnRespawn = false;
 force MRH_MilsimTools_Rmv_map_nolead = false;
@@ -589,7 +594,7 @@ force MRH_MilsimTools_FireSupport_Supplies_ConditionIsFormLeader = true;
 force MRH_MilsimTools_FireSupport_Supplies_CustomCondition = "(((_this select 1) getUnitTrait """"""""Comms&quot && """"""""tfar_backpack_class"""""""" in (items (_this select1)))";
 force MRH_MilsimTools_FireSupport_Supplies_DistanceForAircraft = "5000";
 force MRH_MilsimTools_FireSupport_Supplies_isCustomConditionSet = false;
-force MRH_MilsimTools_FireSupport_Supplies_ListOfAvailableSupplies = "UK3CB_BAF_Box_762_Ammo,UK3CB_BAF_Box_L111A1_Ammo,UK3CB_BAF_Box_L16_Ammo_HE,UK3CB_BAF_Box_L16_Ammo_Illumination,UK3CB_BAF_Box_L16_Ammo_Mixed,UK3CB_BAF_Box_L16_Ammo_Smoke,UK3CB_BAF_Box_L16_Ammo_WPSmoke,UK3CB_BAF_Box_L7A2_Ammo,ACE_medicalSupplyCrate,rhsusf_mags_crate,rhsusf_launcher_crate,rhsusf_mrzr4_d,MRH_AcexFoodSuppliesCrate,";
+force MRH_MilsimTools_FireSupport_Supplies_ListOfAvailableSupplies = "UK3CB_BAF_Box_762_Ammo,UK3CB_BAF_Box_L111A1_Ammo,UK3CB_BAF_Box_L16_Ammo_HE,UK3CB_BAF_Box_L16_Ammo_Illumination,UK3CB_BAF_Box_L16_Ammo_Mixed,UK3CB_BAF_Box_L16_Ammo_Smoke,UK3CB_BAF_Box_L16_Ammo_WPSmoke,UK3CB_BAF_Box_L7A2_Ammo,ACE_medicalSupplyCrate_advanced,rhsusf_mags_crate,rhsusf_launcher_crate,rhsusf_mrzr4_d,MRH_AcexFoodSuppliesCrate";
 force MRH_MilsimTools_FireSupport_Supplies_useSupplyDrops = true;
 force MRH_MilsimTools_FireSupport_SupplyPlanesBluFor = "RHS_C130J";
 force MRH_MilsimTools_FireSupport_SupplyPlanesInde = "";
@@ -707,10 +712,25 @@ force UK3CB_TKP_I = false;
 force UK3CB_TKP_O = false;
 force UK3CB_UN_B = false;
 force UK3CB_UN_I = false;
+force UK_ARMED_FORCES = false;
 
 // NIArms
 force niarms_accswitch = true;
 force niarms_magSwitch = true;
+
+// PRAE Modules
+force force PRAE_EnhanceCIV = true;
+force force PRAE_evacBluforCIV = true;
+force force PRAE_HUMRATS = true;
+
+// PRAE Modules - Field HQ
+force force PRAE_fieldHQ_Add = "";
+force force PRAE_fieldHQ_Enable = false;
+force force PRAE_fieldHQ_Limit = 0;
+
+// PRAE Modules - Multispawn
+force force PRAE_Multispawn = false;
+force force PRAE_Multispawn_ALiVE_GEAR = false;
 
 // TFAR - Clientside settings
 TFAR_default_radioVolume = 6;
