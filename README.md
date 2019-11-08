@@ -23,4 +23,14 @@ Initial stores are available at the Forward Mounting Base.  Air Resupply is avai
 There is a field hospital established at the FMB, with additional MED vehicles available for deployment and staffed by PJs.  The Squadron Senior Medical Sergeant and his team are on immediate notice to move for MEDEVAC, available to TLs and Comms operators
 
 ### Command and Signals
-TFHQ: HADES, 1 (Assault) Troop: VIKING,  2CDO/UKSF Element: TAIPAN, Navy EOD/PJ Element: HAVOC, Ranger 1st Platoon 1st Bn: HUNTER, Ranger 1st Platoon 2nd Bn: FALCON.
+**TFHQ:** HADES
+
+**1 (Assault) Troop:** VIKING
+
+**2CDO/UKSF Element:** TAIPAN
+
+**Navy EOD/PJ Element:** HAVOC
+
+**Ranger 1st Platoon 1st Bn:** HUNTER 
+
+**Ranger 1st Platoon 2nd Bn:** FALCON
