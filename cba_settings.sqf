@@ -170,7 +170,7 @@ force ace_medical_enableFor = 1;
 force ace_medical_enableOverdosing = true;
 force ace_medical_enableRevive = 0;
 force ace_medical_enableScreams = true;
-force ace_medical_enableUnconsciousnessAI = 2;
+force force ace_medical_enableUnconsciousnessAI = 2;
 force ace_medical_enableVehicleCrashes = true;
 force ace_medical_healHitPointAfterAdvBandage = false;
 force ace_medical_increaseTrainingInLocations = true;
@@ -194,7 +194,7 @@ force ace_medical_painCoefficient = 1;
 ace_medical_painEffectType = 0;
 force ace_medical_painIsOnlySuppressed = true;
 force ace_medical_playerDamageThreshold = 1;
-force ace_medical_preventInstaDeath = true;
+force force ace_medical_preventInstaDeath = false;
 force ace_medical_remoteControlledAI = true;
 force ace_medical_useCondition_PAK = 1;
 force ace_medical_useCondition_SurgicalKit = 1;
@@ -426,7 +426,7 @@ acex_volume_showNotification = true;
 
 // ADV - ACE CPR
 force adv_aceCPR_addTime = 20;
-force adv_aceCPR_AED_stationType = """""""""Land_Defibrillator_F""""""""";
+force adv_aceCPR_AED_stationType = "Land_Defibrillator_F";
 force adv_aceCPR_chance_0 = 5;
 force adv_aceCPR_chance_1 = 15;
 force adv_aceCPR_chance_2 = 40;
@@ -463,7 +463,7 @@ force MRH_MT_RHSCBPS_useGlobal = false;
 // MRH_MilsimTools - CAS Suppport
 force MRH_MilsimTools_CAS_DelayBetween = 600;
 force MRH_MilsimTools_FireSupport_CAS_ConditionIsFormLeader = true;
-force MRH_MilsimTools_FireSupport_CAS_CustomCondition = "(((_this select 1) getUnitTrait """"""""Comms&quot && """"""""tfar_backpack_class"""""""" in (items (_this select1)))";
+force MRH_MilsimTools_FireSupport_CAS_CustomCondition = "";
 force MRH_MilsimTools_FireSupport_CAS_isCustomConditionSet = false;
 force MRH_MilsimTools_FireSupport_CASPlanesBluFor = "RHS_A10,rhsusf_f22,B_T_VTOL_01_armed_F,";
 force MRH_MilsimTools_FireSupport_CASPlanesInde = "I_Plane_Fighter_04_F,I_Plane_Fighter_03_dynamicLoadout_F";
@@ -509,7 +509,7 @@ force MRH_MilsimTools_Arty_DelayBetween = 600;
 force MRH_MilsimTools_FireSupport_ArtyMagazines = "32Rnd_155mm_Mo_shells,6Rnd_155mm_Mo_smoke,6Rnd_155mm_Mo_mine,2Rnd_155mm_Mo_Cluster,4Rnd_155mm_Mo_guided,magazine_Missiles_Cruise_01_x18,";
 force MRH_MilsimTools_FireSupport_ArtyShots = "-10";
 force MRH_MilsimTools_FireSupport_ConditionIsFormLeader = true;
-force MRH_MilsimTools_FireSupport_CustomCondition = "(((_this select 1) getUnitTrait """"""""Comms&quot && """"""""tfar_backpack_class"""""""" in (items (_this select1)))";
+force MRH_MilsimTools_FireSupport_CustomCondition = "";
 force MRH_MilsimTools_FireSupport_isCustomConditionSet = false;
 force MRH_MilsimTools_FireSupport_useFireSupport = true;
 
@@ -557,7 +557,7 @@ force MRH_MilsimTools_Jip_MenuIncludeAI = false;
 force MRH_MilsimTools_MEDEVAC_BluFor = "RHS_UH60M_MEV2_d";
 force MRH_MilsimTools_MEDEVAC_Civs = "";
 force MRH_MilsimTools_MEDEVAC_ConditionIsFormLeader = true;
-force MRH_MilsimTools_MEDEVAC_CustomCondition = "(((_this select 1) getUnitTrait """"""""Comms&quot && """"""""tfar_backpack_class"""""""" in (items (_this select1)))";
+force MRH_MilsimTools_MEDEVAC_CustomCondition = "";
 force MRH_MilsimTools_MEDEVAC_DelayBetween = 300;
 force MRH_MilsimTools_MEDEVAC_ESCORT_BluFor = "RHS_AH64D";
 force MRH_MilsimTools_MEDEVAC_ESCORT_BluForCivs = "";
@@ -591,7 +591,7 @@ force MRH_MilsimTools_Roster_ShowAiWithinGrps = false;
 // MRH_MilsimTools - Supply drops
 force MRH_MilsimTools_FireSupport_NumberOfSuppliesDrops = "-1";
 force MRH_MilsimTools_FireSupport_Supplies_ConditionIsFormLeader = true;
-force MRH_MilsimTools_FireSupport_Supplies_CustomCondition = "(((_this select 1) getUnitTrait """"""""Comms&quot && """"""""tfar_backpack_class"""""""" in (items (_this select1)))";
+force MRH_MilsimTools_FireSupport_Supplies_CustomCondition = "";
 force MRH_MilsimTools_FireSupport_Supplies_DistanceForAircraft = "5000";
 force MRH_MilsimTools_FireSupport_Supplies_isCustomConditionSet = false;
 force MRH_MilsimTools_FireSupport_Supplies_ListOfAvailableSupplies = "UK3CB_BAF_Box_762_Ammo,UK3CB_BAF_Box_L111A1_Ammo,UK3CB_BAF_Box_L16_Ammo_HE,UK3CB_BAF_Box_L16_Ammo_Illumination,UK3CB_BAF_Box_L16_Ammo_Mixed,UK3CB_BAF_Box_L16_Ammo_Smoke,UK3CB_BAF_Box_L16_Ammo_WPSmoke,UK3CB_BAF_Box_L7A2_Ammo,ACE_medicalSupplyCrate_advanced,rhsusf_mags_crate,rhsusf_launcher_crate,rhsusf_mrzr4_d,MRH_AcexFoodSuppliesCrate";
@@ -726,11 +726,7 @@ force force PRAE_HUMRATS = true;
 // PRAE Modules - Field HQ
 force force PRAE_fieldHQ_Add = "";
 force force PRAE_fieldHQ_Enable = false;
-force force PRAE_fieldHQ_Limit = 0;
-
-// PRAE Modules - Multispawn
-force force PRAE_Multispawn = false;
-force force PRAE_Multispawn_ALiVE_GEAR = false;
+force force PRAE_fieldHQ_Limit = 1;
 
 // TFAR - Clientside settings
 TFAR_default_radioVolume = 6;
