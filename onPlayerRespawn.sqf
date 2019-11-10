@@ -1,15 +1,4 @@
 
-// Event Handler to set gear on respawn
-player addEventHandler ["RESPAWN", {
-	[] spawn {waituntil {!isnull player};
-
-		_hdl = [objNull, [player,PLAYERGEAR]] spawn ALiVE_fnc_getGear;
-
-		sleep 3;
-		titleText ["", "PLAIN"];
-	};
-}];
-
 // Set player respawns
 if (player getUnitTrait "PRAE") then {
 	player setPosATL (markerPos "respawn_prae");
