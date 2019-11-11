@@ -29,6 +29,9 @@ MISSION_ROOT = call {
     toString _arr
 };
 
+//CQB Blacklist Buildings array
+ALIVE_Building_Blacklist = ["Land_bigwall1_arch","Land_loam_wall1_arch2"];
+
 // Array of speakers
 speakers = [speaker1, speaker2, speaker3, speaker4, speaker5, speaker6];
 
@@ -39,9 +42,6 @@ _action = ["ScramblePJ","Scramble Pararescue","",{{playSound3D [MISSION_ROOT + "
 
 // Add ACE Actions for Insignia
 [] execVM "scripts\add_insignia.sqf";
-
-// Replace arches on map so CQB and Civs don't get placed in them 
-[] execVM "scripts\replace_archways.sqf";
 
 // Setup ALiVE Auto Save every 4 hours 
 14400 call ALiVE_fnc_AutoSave_PNS;
