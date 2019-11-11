@@ -131,7 +131,7 @@ force ace_magazinerepack_timePerMagazine = 2;
 // ACE Map
 force ace_map_BFT_Enabled = false;
 force ace_map_BFT_HideAiGroups = false;
-force ace_map_BFT_Interval = 1;
+force ace_map_BFT_Interval = 0;
 force ace_map_BFT_ShowPlayerNames = false;
 force ace_map_DefaultChannel = -1;
 force ace_map_mapGlow = true;
@@ -139,7 +139,7 @@ force ace_map_mapIllumination = true;
 force ace_map_mapLimitZoom = false;
 force ace_map_mapShake = true;
 force ace_map_mapShowCursorCoordinates = false;
-force ace_markers_moveRestriction = 2;
+force ace_markers_moveRestriction = -1;
 
 // ACE Map Gestures
 ace_map_gestures_defaultColor = [1,0.88,0,0.7];
@@ -170,7 +170,7 @@ force ace_medical_enableFor = 1;
 force ace_medical_enableOverdosing = true;
 force ace_medical_enableRevive = 0;
 force ace_medical_enableScreams = true;
-force force ace_medical_enableUnconsciousnessAI = 2;
+force force ace_medical_enableUnconsciousnessAI = 0;
 force ace_medical_enableVehicleCrashes = true;
 force ace_medical_healHitPointAfterAdvBandage = false;
 force ace_medical_increaseTrainingInLocations = true;
@@ -194,7 +194,7 @@ force ace_medical_painCoefficient = 1;
 ace_medical_painEffectType = 0;
 force ace_medical_painIsOnlySuppressed = true;
 force ace_medical_playerDamageThreshold = 1;
-force force ace_medical_preventInstaDeath = true;
+force ace_medical_preventInstaDeath = true;
 force ace_medical_remoteControlledAI = true;
 force ace_medical_useCondition_PAK = 1;
 force ace_medical_useCondition_SurgicalKit = 1;
@@ -453,9 +453,6 @@ force cba_disposable_replaceDisposableLauncher = true;
 cba_events_repetitionMode = 1;
 cba_optics_usePipOptics = true;
 
-// KNB
-force KNB_book_aceAction = true;
-
 // MRH_Milsim Tools - RHS CBPS
 force MRH_MT_RHSCBPS_globalComp = "MRH_defaultCBPS_medical_simple";
 force MRH_MT_RHSCBPS_useGlobal = false;
@@ -535,7 +532,7 @@ force MRH_MilsimTools_BluForHelis = "RHS_UH60M_d";
 force MRH_MilsimTools_BluForInde = "I_Heli_Transport_02_F,I_Heli_light_03_unarmed_F";
 force MRH_MilsimTools_BluForOpFor = "O_Heli_Transport_04_bench_F,O_Heli_Light_02_unarmed_F,O_Heli_Transport_04_covered_F";
 force MRH_MilsimTools_Heli_ConditionIsFormLeader = true;
-force MRH_MilsimTools_Heli_CustomCondition = "(isFormationLeader player) && ([player, 'mpx_daysack9'] call acre_api_fnc_hasKindOfRadio)";
+force MRH_MilsimTools_Heli_CustomCondition = "";
 force MRH_MilsimTools_Heli_isCustomConditionSet = false;
 force MRH_MilsimTools_Heli_NumberSimulTPerSide = "6";
 force MRH_MilsimTools_Heli_UseHeliTaxiInMission = false;
@@ -712,7 +709,6 @@ force UK3CB_TKP_I = false;
 force UK3CB_TKP_O = false;
 force UK3CB_UN_B = false;
 force UK3CB_UN_I = false;
-force UK_ARMED_FORCES = false;
 
 // NIArms
 force niarms_accswitch = true;
