@@ -68,3 +68,11 @@ headlessClients set [(count headlessClients), player];
 publicVariable "headlessClients";
 isHC = true;
 };
+
+["someId", "onPlayerConnected", {
+    if (({isPlayer _x} count playableUnits) > 0 || OPCOM_TOGGLE) then { ["ALIVE_MIL_OPCOM"] call ALiVE_fnc_unPauseModule; OPCOM_TOGGLE = false; };
+}] call BIS_fnc_addStackedEventHandler;
+ 
+["someId", "onPlayerDisconnected", {
+    if ( ({isPlayer _x} count playableUnits) == 0 ) then { ["ALIVE_MIL_OPCOM"] call ALiVE_fnc_pauseModule; OPCOM_TOGGLE = true; };
+}] call BIS_fnc_addStackedEventHandler;
